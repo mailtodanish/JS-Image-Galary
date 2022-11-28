@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+.pannels {
+  display: flex;
+  height: 100vh;
+}
+.pannels .pannel {
+  flex: 1;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition: front-size 0.7s ease-in-out, flex 1s ease-in-out, background 0.2s;
+}
+.pannels .pannel > * {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: transform 0.2s;
+}
+.pannels .pannel > *:first-child {
+  transform: translateY(-100%);
+}
+.pannels .pannel > *:last-child {
+  transform: translateY(100%);
+}
+.pannels .pannel p {
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  text-shadow: 2px 2px #9c9797;
+  text-align: center;
+  color: white;
+}
+.pannels .open {
+  flex: 5;
+  font-size: 40px;
+}
+.pannels .open-active > *:first-child {
+  transform: translateY(0);
+}
+.pannels .open-active > *:last-child {
+  transform: translateY(0);
+}
+.pannels .panel1 {
+  background-image: url("./static/bg1.jpeg");
+}
+.pannels .panel2 {
+  background-image: url("./static/bg2.jpeg");
+}
+.pannels .panel3 {
+  background-image: url("./static/bg3.jpeg");
+}
+.pannels .panel4 {
+  background-image: url("./static/bg4.jpeg");
+}
+.pannels .panel5 {
+  background-image: url("./static/bg5.jpeg");
+}/*# sourceMappingURL=style.css.map */
